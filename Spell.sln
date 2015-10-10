@@ -1,7 +1,11 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{968AE4F0-3D7E-0C30-FE4E-B26B83C855DD}") = "Spell", "Assembly-CSharp-firstpass.csproj", "{407251C7-DB8F-B962-1BF8-B559BC20EC2A}"
+EndProject
 Project("{968AE4F0-3D7E-0C30-FE4E-B26B83C855DD}") = "Spell", "Assembly-CSharp.csproj", "{9673ADD2-D301-B13D-097A-9236C3056BB1}"
+EndProject
+Project("{968AE4F0-3D7E-0C30-FE4E-B26B83C855DD}") = "Spell", "Assembly-CSharp-Editor.csproj", "{E40E21FD-9207-0D57-1F8F-3CED95D36207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +13,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407251C7-DB8F-B962-1BF8-B559BC20EC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407251C7-DB8F-B962-1BF8-B559BC20EC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407251C7-DB8F-B962-1BF8-B559BC20EC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407251C7-DB8F-B962-1BF8-B559BC20EC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9673ADD2-D301-B13D-097A-9236C3056BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9673ADD2-D301-B13D-097A-9236C3056BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9673ADD2-D301-B13D-097A-9236C3056BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9673ADD2-D301-B13D-097A-9236C3056BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40E21FD-9207-0D57-1F8F-3CED95D36207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40E21FD-9207-0D57-1F8F-3CED95D36207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40E21FD-9207-0D57-1F8F-3CED95D36207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40E21FD-9207-0D57-1F8F-3CED95D36207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-													GlobalSection(MonoDevelopProperties) = preSolution
+																		GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
