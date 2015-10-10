@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMotion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LocalPlayerScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/FireballSelfDestruct.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMotion.cs" Line="92" Column="37" />
+      <File FileName="Assets/Scripts/LocalPlayerScript.cs" Line="19" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
