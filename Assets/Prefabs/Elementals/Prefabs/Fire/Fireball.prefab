@@ -78,6 +78,8 @@ GameObject:
   - 4: {fileID: 400010}
   - 198: {fileID: 19800010}
   - 199: {fileID: 19900010}
+  - 114: {fileID: 11425534}
+  - 114: {fileID: 11469512}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -209,6 +211,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400010}
   m_RootOrder: 3
+--- !u!114 &11425534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fde4fd8b49f049a2b402eaebb151715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11469512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 219
+    i1: 118
+    i2: 200
+    i3: 187
+    i4: 95
+    i5: 106
+    i6: 196
+    i7: 1
+    i8: 249
+    i9: 146
+    i10: 42
+    i11: 6
+    i12: 24
+    i13: 214
+    i14: 0
+    i15: 4
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!198 &19800002
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4106,7 +4151,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: 10
+      scalar: 50
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -7313,7 +7358,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100010}

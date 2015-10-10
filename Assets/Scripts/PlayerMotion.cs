@@ -22,12 +22,13 @@ public class PlayerMotion : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter ()
+	void OnCollisionEnter (Collision collision)
 	{
 
+		if (collision.collider.tag != "Walls") {
 			canJump = true;
-			Debug.Log("Can Jump!");
-
+			Debug.Log ("Can Jump!");
+		}
 	}
 
 
@@ -101,7 +102,7 @@ public class PlayerMotion : MonoBehaviour {
 	void ShootingFireballs()
 	{	if (timeLapse >= 1.0) {
 			Instantiate (fireball, this.transform.position, this.transform.rotation);
-			timeLapse -= 1.0;
+			timeLapse = 0;
 		}
 	}
 
