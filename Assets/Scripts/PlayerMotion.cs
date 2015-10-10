@@ -22,12 +22,13 @@ public class PlayerMotion : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter ()
+	void OnCollisionEnter (Collision collision)
 	{
 
+		if (collision.collider.tag != "Walls") {
 			canJump = true;
-			Debug.Log("Can Jump!");
-
+			Debug.Log ("Can Jump!");
+		}
 	}
 
 
