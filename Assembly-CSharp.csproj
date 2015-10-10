@@ -47,35 +47,31 @@
   <ItemGroup>
      <Compile Include="Assets\Prefabs\Elementals\Scripts\OrbitCamera.cs" />
      <Compile Include="Assets\Prefabs\Elementals\Scripts\TestParticles.cs" />
+     <Compile Include="Assets\Scripts\ExtDataDemo.cs" />
+     <Compile Include="Assets\Scripts\FireballSelfDestruct.cs" />
      <Compile Include="Assets\Scripts\PlayerMotion.cs" />
+     <Compile Include="Assets\Scripts\WiimoteDemo.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\Enums.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\HIDapi.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\Internal\ReadOnlyArray.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\Internal\RegisterReadData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\Wiimote.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\AccelData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\ButtonData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\ClassicControllerData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\IRData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\MotionPlusData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\NunchuckData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\StatusData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\WiiUProData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteData\WiimoteData.cs" />
+     <Compile Include="Assets\Wiimote\Scripts\WiimoteManager.cs" />
      <None Include="Assets\Prefabs\Elementals\!Readme.txt" />
-<<<<<<< HEAD
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
-=======
-<<<<<<< Updated upstream
-     <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
-     <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
-     <None Include="Assets\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\Photon Unity Networking\changelog.txt" />
-=======
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
->>>>>>> Stashed changes
->>>>>>> master
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

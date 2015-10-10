@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../CoolThing/Assets/Script/AimingFieldForPlayerOne.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMotion.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMotion.cs" Line="30" Column="3" />
-      <File FileName="../CoolThing/Assets/Script/AimingFieldForPlayerOne.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/FireballSelfDestruct.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMotion.cs" Line="92" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

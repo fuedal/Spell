@@ -92,15 +92,7 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-<<<<<<< HEAD
-  productGUID: cf6fd9469dac74ca99f613647322dcdf
-=======
-<<<<<<< Updated upstream
-  productGUID: b829dcfe28ce2e744ae16ab465b7e6d2
-=======
-  productGUID: 0fcdd748acc2e490c943a95c47442d21
->>>>>>> Stashed changes
->>>>>>> master
+  productGUID: 06bce043fb8954eb196684554b484ee9
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -255,15 +247,7 @@ PlayerSettings:
   ps4ApplicationParam4: 0
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
-<<<<<<< HEAD
   ps4Passcode: 5PN2qmWqBlQ9wQj99nsQzldVI5ZuGXbE
-=======
-<<<<<<< Updated upstream
-  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
-=======
-  ps4Passcode: 5PN2qmWqBlQ9wQj99nsQzldVI5ZuGXbE
->>>>>>> Stashed changes
->>>>>>> master
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -293,15 +277,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-<<<<<<< HEAD
   psp2PackagePassword: WRK5RhRXdCdG5nG5azdNMK66MuCV6GXi
-=======
-<<<<<<< Updated upstream
-  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
-=======
-  psp2PackagePassword: WRK5RhRXdCdG5nG5azdNMK66MuCV6GXi
->>>>>>> Stashed changes
->>>>>>> master
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -459,17 +435,7 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
   - Android::ScriptingBackend
-<<<<<<< HEAD
   - Standalone::ScriptingBackend
-=======
-<<<<<<< Updated upstream
-  - Metro::ScriptingBackend
-  - Standalone::ScriptingBackend
-  - WP8::ScriptingBackend
-=======
-  - Standalone::ScriptingBackend
->>>>>>> Stashed changes
->>>>>>> master
   - WebGL::ScriptingBackend
   - WebGL::audioCompressionFormat
   - WebGL::exceptionSupport
@@ -479,17 +445,7 @@ PlayerSettings:
   - iOS::EnableIncrementalBuildSupportForIl2cpp
   - iOS::ScriptingBackend
   Android::ScriptingBackend: 0
-<<<<<<< HEAD
   Standalone::ScriptingBackend: 0
-=======
-<<<<<<< Updated upstream
-  Metro::ScriptingBackend: 2
-  Standalone::ScriptingBackend: 0
-  WP8::ScriptingBackend: 2
-=======
-  Standalone::ScriptingBackend: 0
->>>>>>> Stashed changes
->>>>>>> master
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
   WebGL::exceptionSupport: 1

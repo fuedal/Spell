@@ -101,7 +101,7 @@ public class PlayerMotion : MonoBehaviour {
 	void ShootingFireballs()
 	{	if (timeLapse >= 1.0) {
 			Instantiate (fireball, this.transform.position, this.transform.rotation);
-			timeLapse -= 1.0;
+			timeLapse = 0;
 		}
 	}
 
