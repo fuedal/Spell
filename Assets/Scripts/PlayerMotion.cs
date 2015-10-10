@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class PlayerMotion : MonoBehaviour {
-	public GameObject fireball;
+
 	Rigidbody rb;
 	int speedMult = 10;
-	bool canJump = false;
-	double timeLapse = 0;
+	bool canJump = true;
+
 
 	void Start () 
 	{
@@ -16,10 +16,7 @@ public class PlayerMotion : MonoBehaviour {
 
 	void Update () 
 	{
-		timeLapse += Time.deltaTime;
 		NotDying ();
-
-
 	}
 
 	void OnCollisionEnter (Collision collision)
@@ -62,10 +59,7 @@ public class PlayerMotion : MonoBehaviour {
 		{
 			TurnRight();
 		}
-		if (Input.GetKey (KeyCode.K)) 
-		{
-			ShootingFireballs();
-		}
+
 	}
 
 	void MoveForward()
@@ -99,11 +93,6 @@ public class PlayerMotion : MonoBehaviour {
 			canJump = false;
 		}
 	}
-	void ShootingFireballs()
-	{	if (timeLapse >= 1.0) {
-			Instantiate (fireball, this.transform.position, this.transform.rotation);
-			timeLapse = 0;
-		}
-	}
+
 
 }
