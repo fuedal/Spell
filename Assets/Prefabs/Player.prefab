@@ -227,7 +227,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138068}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &9253070
 Behaviour:
   m_ObjectHideFlags: 1
@@ -246,7 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9334cfa36951f4dd4b4c913092dd506d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball: {fileID: 100010, guid: db76c8bb5f6ac401f9922a0618d60004, type: 2}
 --- !u!114 &11443900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -280,6 +279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localCamera: {fileID: 2082780}
   localSound: {fileID: 8126806}
+  whereToShootFireballs: {fileID: 484094}
+  Fireballz: {fileID: 100010, guid: db76c8bb5f6ac401f9922a0618d60004, type: 2}
 --- !u!114 &11499488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -414,6 +415,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: whereToShootFireballs
+      value: 
+      objectReference: {fileID: 484094}
+    - target: {fileID: 0}
+      propertyPath: Fireballz
+      value: 
+      objectReference: {fileID: 100010, guid: db76c8bb5f6ac401f9922a0618d60004, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136924}
