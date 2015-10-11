@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMotion : MonoBehaviour {
 
 	Rigidbody rb;
-	int speedMult = 10;
+	int speedMult = 15;
 	bool canJump = true;
 
 
@@ -16,6 +16,7 @@ public class PlayerMotion : MonoBehaviour {
 
 	void Update () 
 	{
+		rb.AddForce (transform.up * -8.5);
 		NotDying ();
 	}
 
@@ -33,7 +34,7 @@ public class PlayerMotion : MonoBehaviour {
 	{
 		if(Input.GetKey(KeyCode.Space))
 		{
-			Jump ();
+			Jump();
 		}
 		if(Input.GetKey(KeyCode.Q))
 		  {
@@ -89,7 +90,7 @@ public class PlayerMotion : MonoBehaviour {
 	void Jump()
 	{
 		if (canJump == true) {
-			rb.AddForce (transform.up * 500);
+			rb.AddForce (transform.up * 750);
 			canJump = false;
 		}
 	}
