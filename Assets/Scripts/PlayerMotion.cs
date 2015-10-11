@@ -32,7 +32,7 @@ public class PlayerMotion : MonoBehaviour {
 
 	void NotDying()
 	{
-		if(Input.GetKey(KeyCode.Space))
+		if(Input.GetKey(KeyCode.Space) || Input.GetButton("A"))
 		{
 			Jump();
 		}
