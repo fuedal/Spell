@@ -38,7 +38,8 @@ public class PlayerMotion : MonoBehaviour {
 		float x = Input.GetAxis("left-X");
 		float y = Input.GetAxis("left-Y");
 		float rx = Input.GetAxis("right-X");
-		if(Input.GetKey(KeyCode.Space) || Input.GetButton("A"))
+		float lt = Input.GetAxis("left trigger");
+		if(Input.GetKey(KeyCode.Space) || Input.GetButton("A") || (lt > 0))
 		{
 			Jump();
 		}
