@@ -32,31 +32,34 @@ public class PlayerMotion : MonoBehaviour {
 
 	void NotDying()
 	{
+		float x = Input.GetAxis("left-X");
+		float y = Input.GetAxis("left-Y");
+		float rx = Input.GetAxis("right-X");
 		if(Input.GetKey(KeyCode.Space) || Input.GetButton("A"))
 		{
 			Jump();
 		}
-		if(Input.GetKey(KeyCode.Q))
+		if(Input.GetKey(KeyCode.Q) || x < 0)
 		  {
 			MoveLeft();
 		}
-		if(Input.GetKey(KeyCode.W))
+		if(Input.GetKey(KeyCode.W) || y < 0)
 		{
 			MoveForward();
 		}
-		if(Input.GetKey(KeyCode.S))
+		if(Input.GetKey(KeyCode.S) || y > 0)
 		{
 			MoveBack();
 		}
-		if(Input.GetKey(KeyCode.E))
+		if(Input.GetKey(KeyCode.E) || x > 0)
 		{
 			MoveRight();
 		}
-		if(Input.GetKey(KeyCode.A))
+		if(Input.GetKey(KeyCode.A) || rx < 0)
 		{
 			TurnLeft();
 		}
-		if(Input.GetKey(KeyCode.D))
+		if(Input.GetKey(KeyCode.D) || rx > 0)
 		{
 			TurnRight();
 		}
