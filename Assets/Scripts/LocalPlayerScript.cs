@@ -29,7 +29,7 @@ public class LocalPlayerScript : NetworkBehaviour {
 	{
 		if ((Input.GetKey (KeyCode.K) || Input.GetButton("B")) && timeLapse >= 0.4) 
 		{
-			Instantiate(Fireballz, whereToShootFireballs.TransformPoint(0,0,0.05f), whereToShootFireballs.rotation);
+			Instantiate(Fireballz, whereToShootFireballs.TransformPoint(0,0,0.5f), whereToShootFireballs.rotation);
 			timeLapse = 0;
 		}
 
