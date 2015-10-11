@@ -5,6 +5,7 @@ public class PlayerMotion : MonoBehaviour {
 
 	Rigidbody rb;
 	int speedMult = 15;
+	float extraSpeedMult = 1.0f;
 	bool canJump = true;
 
 
@@ -32,6 +33,8 @@ public class PlayerMotion : MonoBehaviour {
 
 	void NotDying()
 	{
+		extraSpeedMult = 1.0f;
+		speedMult = 15;
 		float x = Input.GetAxis("left-X");
 		float y = Input.GetAxis("left-Y");
 		float rx = Input.GetAxis("right-X");
@@ -40,47 +43,56 @@ public class PlayerMotion : MonoBehaviour {
 			Jump();
 		}
 		if(Input.GetKey(KeyCode.Q) || x < 0)
-		  {
+		{
+			extraSpeedMult = x*x;
 			MoveLeft();
 		}
 		if(Input.GetKey(KeyCode.W) || y < 0)
 		{
+			extraSpeedMult = y*y;
 			MoveForward();
 		}
 		if(Input.GetKey(KeyCode.S) || y > 0)
 		{
+			extraSpeedMult = y*y;
 			MoveBack();
 		}
 		if(Input.GetKey(KeyCode.E) || x > 0)
 		{
+			extraSpeedMult = x*x;
 			MoveRight();
 		}
 		if(Input.GetKey(KeyCode.A) || rx < 0)
 		{
+			extraSpeedMult =Mathf.Abs (rx);
 			TurnLeft();
 		}
 		if(Input.GetKey(KeyCode.D) || rx > 0)
 		{
+			extraSpeedMult = rx;
 			TurnRight();
 		}
-
 	}
 
 	void MoveForward()
 	{
-		transform.Translate(Vector3.forward * speedMult * Time.deltaTime);
+		Vector3 t = Vector3.forward * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		transform.Translate(t);
 	}
 	void MoveBack()
 	{
-		transform.Translate(Vector3.back * speedMult * Time.deltaTime);
+		Vector3 t = Vector3.back * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		transform.Translate(t);
 	}
 	void MoveLeft()
 	{
-		transform.Translate(Vector3.left * speedMult * Time.deltaTime);
+		Vector3 t = Vector3.left * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		transform.Translate(t);
 	}
 	void MoveRight()
 	{
-		transform.Translate(Vector3.right * speedMult * Time.deltaTime);
+		Vector3 t = Vector3.right * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		transform.Translate(t);
 	}
 	void TurnLeft()
 	{

@@ -310,6 +310,22 @@ InputManager:
     axis: 19
     joyNum: 0
   - serializedVersion: 3
+    m_Name: B
+    descriptiveName: B button XBOX
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: joystick button 1
+    gravity: 1000
+    dead: .00100000005
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 19
+    joyNum: 0
+  - serializedVersion: 3
     m_Name: left trigger
     descriptiveName: 
     descriptiveNegativeName: 
@@ -366,7 +382,7 @@ InputManager:
     altNegativeButton: 
     altPositiveButton: 
     gravity: 50
-    dead: .5
+    dead: .100000001
     sensitivity: 1
     snap: 1
     invert: 0
@@ -382,7 +398,7 @@ InputManager:
     altNegativeButton: 
     altPositiveButton: 
     gravity: 50
-    dead: .5
+    dead: .100000001
     sensitivity: 1
     snap: 1
     invert: 0

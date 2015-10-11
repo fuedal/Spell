@@ -27,7 +27,7 @@ public class LocalPlayerScript : NetworkBehaviour {
 	}
 	void ShootingFireballz()
 	{
-		if (Input.GetKey (KeyCode.K) && timeLapse >= 1) 
+		if ((Input.GetKey (KeyCode.K) || Input.GetButton("B")) && timeLapse >= 0.4) 
 		{
 			Instantiate(Fireballz, whereToShootFireballs.TransformPoint(0,0,0.05f), whereToShootFireballs.rotation);
 			timeLapse = 0;
