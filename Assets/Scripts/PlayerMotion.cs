@@ -16,8 +16,8 @@ public class PlayerMotion : MonoBehaviour {
 
 	void Update () 
 	{
-		rb.AddForce (transform.up * -8.5);
 		NotDying ();
+		rb.AddForce (transform.up * -9);
 	}
 
 	void OnCollisionEnter (Collision collision)
