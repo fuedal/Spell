@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LocalPlayerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMotion.cs">
     <Files>
-      <File FileName="Assets\Scripts\LocalPlayerScript.cs" Line="25" Column="11" />
-      <File FileName="Assets\Scripts\PlayerMotion.cs" Line="94" Column="104" />
+      <File FileName="Assets\Scripts\LocalPlayerScript.cs" Line="15" Column="4" />
+      <File FileName="Assets\Scripts\PlayerMotion.cs" Line="76" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

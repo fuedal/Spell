@@ -45,32 +45,32 @@ public class PlayerMotion : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.Q) || x < 0)
 		{
-			extraSpeedMult = x*x;
+			//extraSpeedMult = x*x;
 			MoveLeft();
 		}
 		if(Input.GetKey(KeyCode.W) || y < 0)
 		{
-			extraSpeedMult = y*y;
+			//extraSpeedMult = y*y;
 			MoveForward();
 		}
 		if(Input.GetKey(KeyCode.S) || y > 0)
 		{
-			extraSpeedMult = y*y;
+			//extraSpeedMult = y*y;
 			MoveBack();
 		}
 		if(Input.GetKey(KeyCode.E) || x > 0)
 		{
-			extraSpeedMult = x*x;
+			//extraSpeedMult = x*x;
 			MoveRight();
 		}
 		if(Input.GetKey(KeyCode.A) || rx < 0)
 		{
-			extraSpeedMult =Mathf.Abs (rx);
+			//extraSpeedMult =Mathf.Abs (rx);
 			TurnLeft();
 		}
 		if(Input.GetKey(KeyCode.D) || rx > 0)
 		{
-			extraSpeedMult = rx;
+			//extraSpeedMult = rx;
 			TurnRight();
 		}
 	}
@@ -78,21 +78,25 @@ public class PlayerMotion : MonoBehaviour {
 	void MoveForward()
 	{
 		Vector3 t = Vector3.forward * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		//Vector3 t = Vector3.forward * speedMult * Time.deltaTime;
 		transform.Translate(t);
 	}
 	void MoveBack()
 	{
 		Vector3 t = Vector3.back * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		//Vector3 t = Vector3.back * speedMult * Time.deltaTime;
 		transform.Translate(t);
 	}
 	void MoveLeft()
 	{
 		Vector3 t = Vector3.left * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		//Vector3 t = Vector3.left * speedMult * Time.deltaTime;
 		transform.Translate(t);
 	}
 	void MoveRight()
 	{
 		Vector3 t = Vector3.right * Mathf.FloorToInt(speedMult * Time.deltaTime * Mathf.Sqrt (extraSpeedMult) * 1000)/1000;
+		//Vector3 t = Vector3.right * speedMult * Time.deltaTime;
 		transform.Translate(t);
 	}
 	void TurnLeft()
